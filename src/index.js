@@ -1,13 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+// import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import StarRating from './StartRating';
+
+
+// function Test() {
+//   const [movieRate, setmovieRate] = useState();
+
+//   return (
+//     <>
+//     <StarRating deaultRating={3} m axRating={5} size={24} messages={['Terrible','Bad','Okay','Good','Amazing']} onSetRating={setmovieRate} />
+//     <p>{movieRate}</p>
+//     </>
+
+//   )
+// }
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
+    {/* <StarRating deaultRating={3} m axRating={5} size={24} messages={['Terrible','Bad','Okay','Good','Amazing']} /> */}
+    {/* <Test/> */}
   </React.StrictMode>
 );
 
